@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Thronebound</title>
+
+     <link rel="icon" type="image/x-icon" href="/favicon-16x16.png">
+</head>
+<body class="bg-scroll ">
+
+    <!-- <nav class="bg-sky-200 p-3 fex flex-row">
+        <button class="bg-slate-900 rounded-full text-sm text-gray-300 p-2">Modo Claro/ Escuro</button>
+
+        <button class="bg-slate-900 rounded-full text-sm text-gray-300 p-2">Inglês/ Português</button>
+    </nav> -->
+
+    <main class="bg-gradient-to-b from-slate-900 via-[#5A2B2A] to-slate-900 p-10 flex flex-col justify-center gap-8">
+        <header class="bg-red-900 rounded-xl p-4 flex flex-col gap-4 shadow-lg shadow-slate-950">
+            <h1 class="text-3xl font-['Verdana'] font-semibold text-slate-900">
+                Thronebound: cartas e batalhas
+            </h1>
+
+            <p class="text-[19px] text-slate-900 font-semibold">
+                Você já pensou em uma batalha de cartas de RPG? Escolha seus guerreiros e com suas habilidades derrote seu inimigo de um jeito fácil e inesquecível. Experimente essa aventura e se divirta com seus amigos!
+            </p>
+        </header>
+
+        <div class="flex flex-col gap-3">
+            <h3 class="text-2xl font-['Verdana'] font-semibold text-red-800">Objetivo</h3>
+
+            <p class="text-[19px] text-gray-300">
+                Derrote seu adversário utilizando suas habilidades e as cartas suporte. Utilize suas cartas sabiamente antes que seja tarde. 
+            </p>
+        </div>
+
+        <h3 class= "text-2xl font-['Verdana'] font-semibold text-red-800">Conheça os personagens</h3>
+
+        <div class="flex flex-col md:flex-row gap-7 justify-center">
+            <div class="bg-slate-900 p-4 rounded-2xl flex flex-col gap-4 shadow-lg shadow-slate-950">
+                <img src="/thoma.png">
+
+                <h2 class="text-2xl font-['Verdana'] font-semibold text-center text-red-800">
+                    Thoma, o bardo
+                </h2>
+
+                <p class="text-base text-center font-sans text-green-50">
+                    Thoma é um poeta e bardo, que vive da música, viajando e cantando pelas tavernas em seu caminho. Gosta de inventar histórias grandiosas e um pouco distorcidas da realidade, mas mesmo assim não deixa de ser um grande artista.
+                </p>
+            </div>
+
+            <div class="bg-slate-900 p-4 rounded-2xl flex flex-col gap-4 shadow-lg shadow-slate-950">
+                <img src="/ayla.png">
+
+                <h2 class="text-2xl font-['Verdana'] font-semibold text-center text-red-800">
+                    Ayla, a viking
+                </h2>
+                
+                <p class="text-base text-center font-sans text-stone-50 font-medium">
+                    Ayla é uma guerreira desde pequena, seu pai lhe ensinou todas as técnicas para uma boa luta, desde como usar uma espada e um machado, até um escudo. Mesmo tendo treinado para a frente de batalha, ela tenta ser o mais sorrateira possível.
+                </p>
+            </div>
+            
+            <div class="bg-slate-900 p-4 rounded-2xl flex flex-col gap-4 shadow-lg shadow-slate-950">
+                <img src="/alyss.png">
+
+                <h2 class="text-2xl font-['Verdana'] font-semibold text-center text-red-800">
+                    Alyss, a besteira
+                </h2>
+
+                <p class="text-base text-center font-sans text-stone-50 font-medium">
+                    Alyss é uma caçadora que gosta de viver no silêncio da floresta. Com sua besta e mira esplêndida sua caçada sempre traz sucesso. Iniciou sua carreira como caçadora, mas depois de tanto treino, resolveu tornar-se uma caçadora de recompensas renomada.
+                </p>
+            </div>
+
+            <div class="bg-slate-900 p-4 rounded-2xl flex flex-col gap-4 shadow-lg shadow-slate-950">
+                <img src="/carmesin.png">
+
+                <h2 class="text-2xl font-['Verdana'] font-semibold text-center text-red-800">
+                    Carmesin, a feiticeira
+                </h2>
+
+                <p class="text-base text-center font-sans text-indigo-200 font-medium">
+                    Carmesim é uma feiticeira misteriosa extremamente habilidosa, suas poções e magias fazem todos ter pesadelos. Sua origem é incerta, mas como ela é a curandeira da vila, ninguém se atreve a questionar seus conhecimentos.
+                </p>
+            </div>
+        </div>
+
+        <div class="flex justify-center flex-col">
+            <button id="ver-glossario" class="bg-red-900 rounded-t-xl p-4 flex flex-col gap-4 font-['Verdana'] font-semibold text-slate-900">
+                Clique aqui para ver o glossário
+            </button>
+
+            <div id="glossario" class="hidden bg-slate-900 p-3 rounded-b-xl space-y-4">
+                <ul class="text-stone-200 text-[17px]">
+                    <li><span class="font-semibold">ATQ:</span> ataque;</li>
+                    <li><span class="font-semibold">DEF: </span>defesa, quanto barra o dano;</li>
+                    <li><span class="font-semibold">DPS: dano</span> por segundo;</li>
+                    <li><span class="font-semibold">Suporte: </span>auxilia o DPS nos ataques.</li>
+                    <li class="font-semibold">A porcentagem de ocorrência de dano infringido pelos ataques e habilidade são feitos da seguinte forma:</li>
+                    <li><span class="font-semibold">75% =</span> 1 à 15 no dado;</li>
+                    <li><span class="font-semibold">50% =</span> 1 à 10 no dado;</li>
+                    <li><span class="font-semibold">25% =</span> 1 à 5 no dado;</li>
+                </ul>
+
+                <button class="bg-red-900">
+                    Esconder
+                </button>
+            </div>
+        </div>
+
+        <div class="flex flex-col gap-4">
+            <h2 class="font-['Verdana'] font-semibold text-red-800 text-3xl">Regras do jogo</h2>
+
+            <ul class="text-base text-gray-300 flex flex-col gap-3">
+                <li>Joga-se com 4 integrantes, que teram de formar 2 duplas.</li>
+                <li>Cada integrante escolhe um personagem. Contudo, cada dupla deverá ter um suporte (Thoma ou Carmesin) e um DPS (Ayla ou Alyss);</li>
+                <li>O jogo conta com uma jogabilidade em turnos, dupla contra dupla;</li>
+                <li>Primeiramente, são sorteadas 3 cartas do inventário para cada dupla. Depois disso, sorteia-se qual das duplas começa a atacar, escolhendo ímpar ou par, e o dado define o resultado;</li>
+                <li>As cartas inventário, os ataques e as habilidades dos personagens só poderão ser usadas 1 vez por turno;</li>
+                <li>Cada carta de personagem possui habilidades especiais (ATQ, DEF, etc), além de poderem usar apenas um tipo de arma, identificado na carta.</li>
+            </ul>            
+        </div>
+
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>
