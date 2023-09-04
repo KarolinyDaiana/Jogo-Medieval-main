@@ -10,5 +10,6 @@ const esconder = document.getElementById("esconder");
 
 esconder.addEventListener('click', function() {
     glossarioLista.style.display = 'none';
-    console.log("esconder");
+    console.log("escondido");
 });
+
